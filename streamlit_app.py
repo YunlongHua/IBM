@@ -106,7 +106,6 @@ nb = GaussianNB()
 models = [lr, dt, knn, mlp, svm, nb]
 
 
-@st.cache()
 def plot_cm_auc(y_true, y_pred):
     fig, axs = plt.subplots(1, 2, figsize=(10, 4))
 
